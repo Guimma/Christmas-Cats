@@ -47,11 +47,23 @@ var cats = [
 ]
 
 function getRandomCat() {
-    const random = Math.floor(Math.random() * cats.length)
-    catGif.src = cats[random];
+    document.getElementById("cat-text").innerHTML = "meowing...";
+    
+    var gif = document.getElementById("cat-gif");
+    
+    const random = Math.floor(Math.random() * cats.length);
+    if (cats[random] == gif.src) {
+        getRandomCat();
+    }
     console.log("new cat! ㅇㅅㅇ", cats[random]);
+    gif.src = cats[random];
+    gif.addEventListener('load', loaded);
 }
 
+
+function loaded() {
+    document.getElementById("cat-text").innerHTML = 'ฅ/ᐠ. ̫ .ᐟฅ';
+}
 // function getRandomCatFromGIPHY() {
 //     const apiKey = 'AP7wjguv7wmFsW3L0jsPaY0S2DGPVoLn';
 //     const tag = 'christmas_cat';
