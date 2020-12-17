@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'holly_and_berriesregular';
+    src: url('holly_and_berries-webfont.woff2') format('woff2'),
+         url('holly_and_berries-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.background {
+    margin: 0 auto;
+    background-color: #FFBEEF;
+}
+
+.container {
+    text-align: center;
+}
+
+.santa-cat {
+    margin-top: 1%;
+    width: 200px;
+}
+
+.title {
+    margin: 0 auto;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 56px;
+    color: #2E244F;
+}
